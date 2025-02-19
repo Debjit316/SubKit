@@ -46,13 +46,13 @@ export const sendReminders = serve(async (context) => {
     //   break;
     // }
 
-    // if (dayjs().isSame(reminderDate, "day")) {
-    await triggerReminder(
-      context,
-      `${daysBefore} days before reminder`,
-      subscription
-    );
-    // }
+    if (dayjs().isSame(reminderDate, "day")) {
+      await triggerReminder(
+        context,
+        `${daysBefore} days before reminder`,
+        subscription
+      );
+    }
 
     break;
     // }
