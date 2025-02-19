@@ -54,7 +54,7 @@ export const sendReminders = serve(async (context) => {
       );
     }
 
-    break;
+    // break;
     // }
   }
 });
